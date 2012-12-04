@@ -1,4 +1,5 @@
-import Scomm.*;
+package Scomm;
+
 import utils.Convert;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
