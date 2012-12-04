@@ -46,7 +46,7 @@ public class DsmMessageParser implements ServerListener{
 	{
 		
 		try {
-			server = new DsmServer(5001);
+			server = new DsmServer(5000);
 			server.registerListener(this);
 			new Thread(server).start();
 		} 
