@@ -16,7 +16,7 @@ private ServerListener listener;
 		{
 			this.listener = sl;
 		}
-	int serverPort=5000;
+	int serverPort=5001;
 	Thread runningThread= null;
 	ServerSocket serverSocket = null;
 		
