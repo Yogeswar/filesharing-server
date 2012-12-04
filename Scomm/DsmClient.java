@@ -20,7 +20,9 @@ public class DsmClient {
 			{
 			
 			// server is listening on this port			
-			soc = new Socket(ip,5000);			
+                            System.out.print(ip);
+			soc = new Socket(ip,5000);	
+                                                
 			toserver=new BufferedOutputStream(soc.getOutputStream());
 			
 		//	in = soc.getInputStream();
@@ -33,10 +35,12 @@ public class DsmClient {
 			toserver.write(buf, 0, buf.length);
 			    //     }
 			toserver.close();
+                        soc.close();;
 	//		in.close();
 			}
 		catch(Exception ex)
 			{
+                            ex.printStackTrace();
 			System.out.println("Error in the code : " + ex.toString());
 			}
 		}

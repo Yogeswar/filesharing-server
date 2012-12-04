@@ -35,6 +35,7 @@ private ServerListener listener;
             try {
                 clientSocket = this.serverSocket.accept();
             } catch (Exception ex) {
+                ex.printStackTrace();
             	System.out.println("Error in the code server : " + ex.toString());
                 }
                 
