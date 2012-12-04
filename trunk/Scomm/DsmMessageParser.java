@@ -1,5 +1,5 @@
+package Scomm;
 
-import DataManager.Node;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -10,7 +10,6 @@ import java.util.Arrays;
 import Scomm.MsgAction;
 import Scomm.ServerListener;
 import utils.Convert;
-import DataManager.Node;
 
 
 public class DsmMessageParser implements ServerListener{

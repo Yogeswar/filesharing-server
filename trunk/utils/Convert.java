@@ -1,4 +1,4 @@
-
+package utils;
 
 /*
  * reference: http://scr4tchp4d.blogspot.com/2008/07/object-to-byte-array-and-byte-array-to.html 

@@ -1,7 +1,5 @@
-import DataManager.Node;
-import DataManager.*;
+package Scomm;
 
-import comm.MyClient;
 import java.awt.Container;
 import Scomm.DsmClient;
 import Scomm.*;
@@ -21,7 +19,6 @@ import javax.swing.JMenuItem;
 import javax.swing.SwingUtilities;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import DataManager.Node;
 import utils.Convert;
 
 
@@ -51,7 +48,7 @@ public class ServerController implements MsgAction
 
 	@Override
 	public void updateClientTable(Node st) {
-		System.out.println("Update from " + st.getIp() + " Role : " + st.getRole() + " Group : " + st.getGroup());
+		System.out.println("Update from " + st.getIp());
 		Node temp;
 		Iterator<Node> iterator = this.iptable.iterator();
 		while(iterator.hasNext())
