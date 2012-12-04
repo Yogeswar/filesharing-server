@@ -1,5 +1,6 @@
 package Scomm;
 
+import DataManager.Node;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -23,7 +24,7 @@ public class DsmMessageParser implements ServerListener{
 	private Convert conv;
 	
 	// Constants
-	  public static final byte CMD_REGISTER				= 9;
+	  public static final byte CMD_REGISTER				= 11;
 	  public static final byte CMD_UPDATE				= 1;
 	  public static final byte CMD_DISCONNECT	        = 10;
 	  	
@@ -92,7 +93,7 @@ public class DsmMessageParser implements ServerListener{
 	}
 	
 	private void parseRegister(){
-		
+		System.out.println("parseRegister");
 		Node obj = (Node) conv.toObject(this.data);
 		this.action.Register(obj);
 		
@@ -100,6 +101,7 @@ public class DsmMessageParser implements ServerListener{
 		
 	private void parseUpdate()
 	{
+            System.out.println("parseUpdate");
 		try 
 		{
 		    ByteArrayInputStream bis = new ByteArrayInputStream(this.data);
@@ -115,6 +117,7 @@ public class DsmMessageParser implements ServerListener{
 	
 	private void parseDisconnect()
 	{
+            System.out.println("parseDisconnect");
 		this.action.disconnect(this.recvIP);
 	}
 	

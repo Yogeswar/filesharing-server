@@ -1,5 +1,6 @@
 package Scomm;
 
+import DataManager.*;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

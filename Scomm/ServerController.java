@@ -1,5 +1,6 @@
 package Scomm;
 
+import DataManager.Node;
 import java.awt.Container;
 import Scomm.DsmClient;
 import Scomm.*;
